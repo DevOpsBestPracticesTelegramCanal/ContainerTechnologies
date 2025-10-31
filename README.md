@@ -9,6 +9,7 @@
 ### 🎯 Основные разделы
 
 - **[📖 Основное руководство](README-main.md)** - Полная документация по всем технологиям
+- **[☸️ Kubernetes оркестрация](orchestration/)** - Production-ready Kubernetes
 - **[📰 Новости](news/)** - Актуальные новости контейнерных технологий
 - **[🛠️ Практические примеры](examples/)** - Готовые конфигурации и решения
 - **[📚 Ресурсы](resources/)** - Дополнительные материалы и ссылки
@@ -18,7 +19,13 @@
 ### 🐳 Традиционные контейнеры
 - **Docker** - Индустриальный стандарт контейнеризации
 - **Podman** - Rootless альтернатива Docker
-- **Kubernetes** - Оркестрация контейнеров
+
+### ☸️ Оркестрация контейнеров
+- **Kubernetes** - Production-ready оркестрация
+- **Security Hardening** - NSA/CISA compliance
+- **GitOps & CI/CD** - ArgoCD, Flux автоматизация
+- **Observability** - Prometheus, Grafana, OpenTelemetry
+- **FinOps** - Оптимизация затрат и ресурсов
 
 ### 🚀 Технологии следующего поколения
 - **WebAssembly (WASM)** - Легковесная виртуализация
@@ -35,6 +42,16 @@
 ```
 ContainerTechnologies/
 ├── traditional/          # Docker & Podman основы
+├── orchestration/        # ☸️ Kubernetes production
+│   ├── core-concepts/    # Pods, Services, Deployments
+│   ├── best-practices/   # Production guidelines
+│   ├── security-hardening/ # NSA/CISA compliance
+│   ├── observability/    # Prometheus, Grafana
+│   ├── gitops-cicd/      # ArgoCD, Flux, Tekton
+│   ├── compliance/       # SOC2, HIPAA, PCI-DSS
+│   ├── finops/          # Cost optimization
+│   ├── chaos-engineering/ # Reliability testing
+│   └── mind-maps/       # Interactive guides
 ├── next-generation/      # WebAssembly, MicroVMs
 ├── edge-native/          # K3s, KubeEdge, IoT
 ├── ai-ml-ready/          # GPU контейнеры, ML
@@ -52,8 +69,9 @@ ContainerTechnologies/
 ## 📊 Статистика новостей
 
 - **Всего новостей за 3 месяца**: 266
-- **Источников RSS**: 25+
-- **Категории**: Kubernetes, Docker, Security, Monitoring, Edge, WebAssembly
+- **Источников RSS**: 60+ (включая Kubernetes best practices)
+- **Категории**: Kubernetes, Docker, Security, Monitoring, Edge, WebAssembly, GitOps, FinOps
+- **Kubernetes источники**: 35+ специализированных RSS feeds
 
 ## 🚀 Quick Start
 
@@ -72,6 +90,13 @@ podman run -d --name nginx docker.io/nginx:alpine
 podman generate systemd nginx --new > nginx.service
 ```
 
+### Kubernetes Production
+```bash
+# Production-ready deployment
+kubectl apply -f orchestration/best-practices/
+kubectl get pods --show-labels
+```
+
 ### WebAssembly Containers
 ```bash
 # WASM runtime
@@ -81,6 +106,9 @@ docker run --runtime=io.containerd.wasmedge.v1 wasmedge/example
 ## 📋 Requirements
 
 - **Traditional**: Docker 24+, Podman 4+
+- **Kubernetes**: kubectl 1.28+, Helm 3.12+, K9s
+- **Observability**: Prometheus, Grafana, OpenTelemetry
+- **GitOps**: ArgoCD 2.8+, Flux 2.1+, Tekton
 - **Next-Gen**: containerd 1.7+, WasmEdge, Firecracker
 - **Edge**: K3s 1.28+, KubeEdge 1.15+
 - **AI/ML**: NVIDIA Container Runtime, CUDA 12+
@@ -88,10 +116,10 @@ docker run --runtime=io.containerd.wasmedge.v1 wasmedge/example
 
 ## 🎯 Skill Levels
 
-- **Beginner**: Traditional containers
-- **Intermediate**: Multi-runtime, observability
-- **Advanced**: WebAssembly, eBPF, Edge
-- **Expert**: Production SLA, compliance
+- **Beginner**: Traditional containers, basic Kubernetes
+- **Intermediate**: Multi-runtime, observability, GitOps
+- **Advanced**: WebAssembly, eBPF, Edge, service mesh
+- **Expert**: Production SLA, compliance, FinOps
 
 ## 📊 Success Metrics
 
